@@ -8,7 +8,7 @@ $('.card').append(`<ul class="list-group list-group-flush">
 
 $('.card .clear').click(function (event) {
   const dismissed = event.currentTarget.closest('.card');
-  TweenMax.to(dismissed, 1, { opacity: 0, y: -50, delay: .5, height: 0, display: 'none' });
+  TweenMax.to(dismissed, 1, { opacity: 0, y: -500, delay: .5, height: 0, display: 'none' });
 })
 $('.card .dismiss').click(function (event) {
   const more = event.currentTarget.closest('.card').children[0];
@@ -22,7 +22,3 @@ $('.card .more').click(function (event) {
   const options = event.currentTarget.closest('.card').children[3];
   TweenMax.fromTo(options, 1, { x: 20 }, { opacity: 1, x: -1, display: 'block' });
 })
-
-// TweenMax.to(card1, 1, { opacity: 0, y: -50, delay: .5, height: 0 });
-// TweenMax.from(card2, 1, { opacity: 0, x: 50 });
-// TweenMax.from(card, 3, { opacity: 0, x: 20 });
