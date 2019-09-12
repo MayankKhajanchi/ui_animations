@@ -27,12 +27,58 @@
       display: none;
       position: absolute;
       top: 0;
-      right: 5px;
+      right: 8px;
+    }
+
+    .more {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 8px;
+    }
+
+    .card:hover .more {
+      display: block;
+      color: green;
     }
 
     .card:hover .clear {
       display: block;
       color: rgb(180, 55, 87);
+    }
+
+    .list-group-flush {
+      opacity: 0;
+      position: absolute;
+      top: 20%;
+      left: 25%;
+      height: 200%;
+      display: none;
+    }
+
+    .list-group-flush {
+      border-top-left-radius: 10px;
+    }
+
+    .pin {
+      height: 100px;
+    }
+
+    .pin:hover {
+      background: black;
+      color: white;
+    }
+
+    .pin:hover {
+      border-radius: 10px;
+    }
+
+    .dismiss {
+      color: black
+    }
+
+    .card-img-top {
+      max-height: 200px;
     }
   </style>
 </head>
@@ -41,13 +87,13 @@
   <div class="container">
     <div class="card-columns">
       <div class="card card1">
-        <img src="2-1.jpg" class="card-img-top">
-        <div class="card-body">
-          <h5 class="card-title">Card title that wraps to a new line</h5>
-          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-            content. This content is a little bit longer.</p>
+        <div class="content">
+          <img src="2-1.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Card title that wraps to a new line</h5>
+            <p class="card-text">This</p>
+          </div>
         </div>
-        <div class="clear"><i class="fas fa-times"></i></div>
       </div>
       <div class="card card2 p-3 text-left">
         <blockquote class="blockquote mb-0">
