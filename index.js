@@ -1,9 +1,10 @@
+var closeButton = '';
+$('.card').append('<div class="clear"><i class="fas fa-times"></i></div>');
 var card1 = $('.card1');
-// var card2 = $('.card2');
-// var card = $('.card');
 
-$('.card').click(function (event) {
-  TweenMax.to(event.currentTarget, 1, { opacity: 0, y: -50, delay: .5, height: 0, display: 'none' });
+$('.card .clear').click(function (event) {
+  console.log(event.currentTarget.closest('.card'));
+  TweenMax.to(event.currentTarget.closest('.card'), 1, { opacity: 0, y: -50, delay: .5, height: 0, display: 'none' });
 })
 
 // TweenMax.to(card1, 1, { opacity: 0, y: -50, delay: .5, height: 0 });

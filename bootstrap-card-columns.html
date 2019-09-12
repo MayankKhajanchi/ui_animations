@@ -9,6 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
     crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
   <style>
@@ -20,6 +21,18 @@
     .card-columns {
       column-count: 5;
       margin-top: 20px;
+    }
+
+    .clear {
+      display: none;
+      position: absolute;
+      top: 0;
+      right: 5px;
+    }
+
+    .card:hover .clear {
+      display: block;
+      color: rgb(180, 55, 87);
     }
   </style>
 </head>
@@ -34,6 +47,7 @@
           <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
             content. This content is a little bit longer.</p>
         </div>
+        <div class="clear"><i class="fas fa-times"></i></div>
       </div>
       <div class="card card2 p-3 text-left">
         <blockquote class="blockquote mb-0">
