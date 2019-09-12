@@ -22,3 +22,6 @@ $('.card .more').click(function (event) {
   const options = event.currentTarget.closest('.card').children[3];
   TweenMax.fromTo(options, 1, { x: 20 }, { opacity: 1, x: -1, display: 'block' });
 })
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+});
